@@ -77,3 +77,7 @@ footer {
     font-size: 1vw;
     line-height: 0;
 }
+
+footer p a {
+    color: #000;
+}

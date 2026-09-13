@@ -28,7 +28,7 @@ function jump() {
             ducko.classList.add("safe");
             setTimeout( function() {
                 ducko.classList.remove("safe");
-            }, 550);
+            }, 580);
         }, 140);
     }
 }

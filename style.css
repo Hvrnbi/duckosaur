@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+#game-div {
+    height: 24vw;
+    width: 100%;
+    position: relative;
+    top: 48vh;
+    transform: translateY(-50%);
+    background: linear-gradient(0deg, rgb(232, 219, 146) 0%, rgb(237, 212, 138) 33%,rgb(38, 165, 255) 100%);
+}
+
+#ducko-div {
+    width: 9vw;
+    height: 12vw;
+    position: absolute;
+    left: 4vw;
+    bottom: 0;
+    background-image: url(player.gif);
+    background-size: cover;
+}
+
+@keyframes jump {
+    0% { bottom: 0vw; }
+    50% { bottom: 12vw; }
+    100% { bottom: 0vw;}
+}
+
+.jumping {
+    animation-name: jump;
+    animation-duration: 1s;
+}
+
+.cactus {
+    width: 4vw;
+    height: 6vw;
+    position: absolute;
+    bottom: 1vw;
+    background-image: url(cactus.png);
+    background-size: cover;
+}
+
+#score-div {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2vw;
+    font-family: Helvetica;
+}
+
+#text-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 4vw;
+    font-family: Helvetica;
+    text-align: center;
+    cursor: pointer;
+}
